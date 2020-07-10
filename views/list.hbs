@@ -1,0 +1,29 @@
+<div>
+    <h1>Service Catalogue</h1>
+</div>
+<table>
+    <tr>
+        <th>Application</th>
+        <th>SGroup</th>
+        <th>Service</th>
+        <th>Operation</th>
+        <th>Version</th>
+        <th>Backend</th>
+        <th>protocol</th>
+    </tr>
+
+    {{#each data}}
+    <tr>
+        <td>{{this.Application}}</td>
+        <td>{{this.SGroup}}</td>
+        <td>{{this.Service}}</td> 
+        <td>{{this.Operation}}</td>
+        <td>{{this.deaths}}</td>
+        <td>{{this.Version}}</td>
+        <td>{{this.Backend}}</td>
+        <td>{{this.protocol}}</td>
+        
+    </tr>
+    {{/each}}
+
+</table>
